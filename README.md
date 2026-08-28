@@ -8,10 +8,22 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+
+### Step 1:
+
+Import the `os`, `numpy`, and `sys` modules. Set `OPENBLAS_NUM_THREADS` to `1` for NumPy operations.
+
+### Step 2:
+
+Read the number of unknowns from the user and create NumPy arrays to store the **augmented matrix** and the **solution vector**. Then read the coefficients of the augmented matrix as input.
+
+### Step 3:
+
+Apply **Gaussian Elimination** by converting the augmented matrix into upper triangular form. Calculate the elimination ratio and update the matrix elements. If a zero pivot is detected, terminate the program with a divide-by-zero message.
+
+### Step 4:
+
+Perform **back substitution** to calculate the values of the unknowns. Store the solutions in `x` and print each value in the format `X0`, `X1`, etc., rounded to two decimal places.
 
 ## Program:
 Program to find the solution of a matrix using Gaussian Elimination.
@@ -19,7 +31,6 @@ Program to find the solution of a matrix using Gaussian Elimination.
 
 
 ## Output:
-![gaussian elimination]()
 
 <img width="986" height="530" alt="image" src="https://github.com/user-attachments/assets/4c1c6c09-81a0-4f99-a4f8-a167d2596384" />
 
